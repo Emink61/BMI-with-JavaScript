@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(
+        135deg,
+        #001f3a 0%,
+        #023e97 40%,
+        #3a86ff 70%,
+        #c2e9fb 100%
+    );
+    background-attachment: fixed;
+}
+
+
+.wrapper {
+    width: 360px;
+    padding: 40px 30px;
+    border-radius: 28px;
+
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.wrapper h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+.wrapper p {
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.2);
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 16px;
+    border: none;
+    cursor: pointer;
+
+    font-weight: 600;
+    font-size: 15px;
+
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+
+#result {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 15px;
+    opacity: 0.95;
+}
